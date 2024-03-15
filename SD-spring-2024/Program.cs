@@ -10,4 +10,14 @@ void RunRace()
     race.DeclareWinner();
 }
 
-RunRace();
+// RunRace();
+
+void AnswerCollatzQuestion()
+{
+    (long Number, long Terms) answer = CollatzSequence.DetermineAnswer();
+    Console.WriteLine($"The number with the longest chain is {answer.Number} with {answer.Terms} terms.");
+}
+
+// AnswerCollatzQuestion();
+
+SumDifferenceSolution.SolveSumDifferenceProblem();

@@ -12,3 +12,4 @@ C:\CS\SD-spring-2024\SD-spring-2024\obj\Debug\net8.0\refint\SD-spring-2024.dll
 C:\CS\SD-spring-2024\SD-spring-2024\obj\Debug\net8.0\SD-spring-2024.pdb
 C:\CS\SD-spring-2024\SD-spring-2024\obj\Debug\net8.0\SD-spring-2024.genruntimeconfig.cache
 C:\CS\SD-spring-2024\SD-spring-2024\obj\Debug\net8.0\ref\SD-spring-2024.dll
+C:\CS\SD-spring-2024\SD-spring-2024\obj\Debug\net8.0\SD-spring-2024.sourcelink.json
