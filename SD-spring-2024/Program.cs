@@ -10,7 +10,7 @@ void RunRace()
     race.DeclareWinner();
 }
 
-// RunRace();
+RunRace();
 
 void AnswerCollatzQuestion()
 {
@@ -20,4 +20,4 @@ void AnswerCollatzQuestion()
 
 // AnswerCollatzQuestion();
 
-SumDifferenceSolution.SolveSumDifferenceProblem();
+// SumDifferenceSolution.SolveSumDifferenceProblem();
