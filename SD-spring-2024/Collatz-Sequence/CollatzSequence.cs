@@ -16,8 +16,12 @@
     static long longestChain = 0;
     static long count = 1;
 
+    
+    static Dictionary<long,long> cache = new Dictionary<long, long>();
+
 	public static (long, long) DetermineAnswer()
     {
+        cache.Add(1,1);
         for (int i = 1; i < 1_000_000; i++)
         {
             count = 1;
@@ -33,18 +37,25 @@
 		
     static void RunSequence(long number)
     {
+        if(cache.ContainsKey(number)) {
+            count = cache[number];
+            return;
+        }
         if (number == 1) { return; }
         else if (number % 2 == 0)
         {
-            number = number / 2;
+            var nextnumber = number / 2;
+            RunSequence(nextnumber);
             count++;
-            RunSequence(number);
+            
         }
         else
         {
-            number = (number * 3) + 1;
+            var nextnumber = (number * 3) + 1;
+            RunSequence(nextnumber);
             count++;
-            RunSequence(number);
+
         }
+        cache.TryAdd(number,count);
     }
 }

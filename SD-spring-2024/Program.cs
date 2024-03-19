@@ -18,6 +18,11 @@ void AnswerCollatzQuestion()
     Console.WriteLine($"The number with the longest chain is {answer.Number} with {answer.Terms} terms.");
 }
 
-// AnswerCollatzQuestion();
+var watch = System.Diagnostics.Stopwatch.StartNew();
+ AnswerCollatzQuestion();
+watch.Stop();
+var elapsedMs = watch.ElapsedMilliseconds;
+Console.WriteLine($"Took {elapsedMs} ms");
+
 
 // SumDifferenceSolution.SolveSumDifferenceProblem();
