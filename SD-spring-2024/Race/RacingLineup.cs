@@ -1,4 +1,6 @@
-﻿public static class RacingLineup
+﻿using System.Collections.Generic;
+
+public static class RacingLineup
 {
     private readonly static string[] _numbers = { "03", "12", "14", "23", "28", "31", "41" };
     public static List<Car> Cars = new List<Car>();

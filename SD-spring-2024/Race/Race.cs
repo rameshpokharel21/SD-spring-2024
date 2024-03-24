@@ -1,4 +1,7 @@
-﻿public class Race
+﻿using System;
+using System.Collections.Generic;
+
+public class Race
 {
     public int Length { get; set; }
     public List<Car> Lineup { get; set; }
@@ -26,7 +29,7 @@
             currentCar.MoveForward(distanceToMove);
             Console.WriteLine($"The {currentCar.Number} car is at position {currentCar.Position} of {Length}");
             Car? tempWinner = Winner;
-
+            ArgumentNullException.ThrowIfNull(Winner);
             if (currentCar.Position >= Length)
             {
                 IsOngoing = false;
@@ -43,6 +46,6 @@
 
     public void DeclareWinner()
     {
-        Console.WriteLine($"The winner is the {Winner.Number} car!");
+        System.Console.WriteLine($"The winner is the number \"{Winner.Number}\" car!");
     }
 }

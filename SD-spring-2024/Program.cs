@@ -1,13 +1,17 @@
-﻿var randomIntGenerator = new Random();
+﻿using System;
+
+var randomIntGenerator = new System.Random();
 
 void RunRace()
 {
     Race race = new Race(70);
+    //Race2 race = new Race2(70);
     while (race.IsOngoing)
     {
         race.RunLap(randomIntGenerator);
     }
     race.DeclareWinner();
+    //race.DeclareFinishersAndWinners();
 }
 
 RunRace();
