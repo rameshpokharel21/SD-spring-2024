@@ -12,6 +12,7 @@ void RunRace()
 
 RunRace();
 
+
 void AnswerCollatzQuestion()
 {
     (long Number, long Terms) answer = CollatzSequence.DetermineAnswer();
